@@ -3,7 +3,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/font-awesome/css/font-awesome.css'
 import Place from './Place';
 import Rating from './Rating';
-import Horario from './Horario'
+import Horario from './Horario';
+
 
 class App extends Component {
   constructor(props){
@@ -104,7 +105,8 @@ class App extends Component {
       'type: '+place.type, 'url: '+place.url, 'utc_offset', 'vicinity')
       this.setState({places:placesTemp, 
                      placeRating:rating,
-                     placeHorarios:placeHorarios})
+                     placeHorarios:placeHorarios
+                    })
       this.showMap(place.geometry.location);
     }
   }
